@@ -5,7 +5,7 @@ class Maze {
       this.y=y
       this.height=height
       this.width=20
-      this.body = Bodies.rectangle(x,y,20,height,angle)
+      this.body = Bodies.rectangle(x,y,20,height,{isStatic:true})
       Matter.Body.setAngle(this.body,angle)
       World.add(world,this.body)
   }
