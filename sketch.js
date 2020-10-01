@@ -10,6 +10,7 @@ maze15,maze16,maze17,maze18,maze19,maze20
 var AlmondImg,AppleImg,BroccoliImg,CarrotImg,CheeseImg,ChickenImg,EggImg,Egg2Image,GuavaImg,MangoImg,MilkImg,Milk2Img,Milk3Img;
 var MushroomImg,OrangeJuiceImg,PeanutsImg,StrawberryImg,TunaImg,TheNutrientTestImg;
 
+var boy
 function preload(){
 
 //loading the images
@@ -21,6 +22,7 @@ peanutsImg=loadImage("Images/Peanuts.png");
 strawberryImg=loadImage("Images/Strawberry.png");
 chickenImg=loadImage("Images/Chicken.png");
 eggImg=loadImage("Images/Egg.png");
+//boyImg=loadImage("Images/Boy.png");
 // carrotImg.loadImage("Images/Carrot.png");
 // cheeseImg.loadImage("Images/Cheese.png");
 // egg2Img.loadImage("Images/Egg2.png");
@@ -93,13 +95,14 @@ maze48= new Maze(315,760)
 maze49= new Maze(315,760)
 maze50= new Maze(315,760)
 
-Almond=new Vitamin(220,260,almondImg);
-Apple=new Vitamin(530,160,appleImg);
-Broccoli=new Vitamin(430,615,broccoliImg);
+Almond=new Vitamin(300,390,almondImg);
+Apple=new Vitamin(590,165,appleImg);
+Broccoli=new Vitamin(430,590,broccoliImg);
 Peanuts=new Vitamin(700,300,peanutsImg);
-Strawberry=new Vitamin(625,500,strawberryImg);
+Strawberry=new Vitamin(560,500,strawberryImg);
 Chicken=new Vitamin(910,560,chickenImg);
 Egg=new Vitamin(1050,282.5,eggImg);
+boy= new Boy(1030,390,20,20,boy);
 }
 
 function draw(){
@@ -166,4 +169,6 @@ Strawberry.display();
 Peanuts.display();
 Chicken.display();
 Egg.display();
+
+Boy.display();
 }
