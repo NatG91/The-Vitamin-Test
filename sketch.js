@@ -83,7 +83,7 @@ maze36= new Maze(950,500,100,PI/2)
 maze37= new Maze(950,650,150,PI)
 maze38= new Maze(1030,650,100,PI/2)
 maze39= new Maze(630,670,250,PI/2)
-maze40= new Maze(530,370)
+maze40= new Maze(200,760,200,PI/2)
 maze41= new Maze(315,760)
 maze42= new Maze(315,760)
 maze43= new Maze(315,760)
@@ -102,7 +102,7 @@ Peanuts=new Vitamin(700,300,peanutsImg);
 Strawberry=new Vitamin(560,500,strawberryImg);
 Chicken=new Vitamin(910,560,chickenImg);
 Egg=new Vitamin(1050,282.5,eggImg);
-boy= new Boy(1030,390,20,20,boy);
+boy= new Boy(100,400,100,100,boy);
 }
 
 function draw(){
@@ -170,5 +170,5 @@ Peanuts.display();
 Chicken.display();
 Egg.display();
 
-Boy.display();
+boy.display();
 }
